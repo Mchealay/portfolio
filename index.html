@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mchaelay Hafte - Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Mchaelay Hafte</h1>
+            <p>Software Engineer | Problem Solver | Tech Enthusiast</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="btn">🌙 Dark Mode</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Hello, I'm Mchaelay Hafte</h2>
+                <p>I build scalable, efficient, and user-friendly software solutions. Let's create something amazing together!</p>
+                <a href="#contact" class="btn">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>I'm a passionate software engineer with expertise in full-stack development, mobile app development, and database management. I thrive on solving complex problems and delivering high-quality solutions that make an impact.</p>
+                <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or mentoring aspiring developers.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <i class="fas fa-code"></i>
+                    <h3>Frontend Development</h3>
+                    <p>HTML, CSS, JavaScript, React</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-server"></i>
+                    <h3>Backend Development</h3>
+                    <p>PHP, Django, Node.js, SQL</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-mobile"></i>
+                    <h3>Mobile Development</h3>
+                    <p>React Native</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-database"></i>
+                    <h3>Database Management</h3>
+                    <p>MySQL, SQLite, MongoDB</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="filter-buttons">
+                <button class="btn active" data-filter="all">All</button>
+                <button class="btn" data-filter="frontend">Frontend</button>
+                <button class="btn" data-filter="backend">Backend</button>
+                <button class="btn" data-filter="mobile">Mobile</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project" data-category="backend">
+                    <h3>Hospital Management System</h3>
+                    <p>A full-stack web application built with PHP, HTML, CSS, and MySQL for managing hospital operations. Features include patient registration, appointment scheduling, and doctor management.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+                <div class="project" data-category="backend">
+                    <h3>Student Registration System</h3>
+                    <p>A full-stack web application built with Django for managing student registrations. Integrated PayPal for secure payment processing.</p>
+                    <a href="https://github.com/Mchealay/payment-with-paypal-for-srs.git" class="btn">View Project</a>
+                </div>
+                <div class="project" data-category="mobile">
+                    <h3>Task Manager App</h3>
+                    <p>A cross-platform mobile app for task management, built with React Native. Includes reminders, notifications, and cloud sync.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+                <div class="project" data-category="frontend">
+                    <h3>Portfolio Website</h3>
+                    <p>A responsive portfolio website built with HTML, CSS, and JavaScript. Features smooth scrolling and dark mode.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Let's connect and build something incredible together!</p>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div class="contact-links">
+                <a href="mailto:haftemchealay@gmail.com" class="btn">
+                    <i class="fas fa-envelope"></i> Email Me
+                </a>
+                <a href="https://www.linkedin.com/Mchealay" target="_blank" class="btn">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/Mchealay target="_blank" class="btn">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024/2025 Mchaelay Hafte. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
