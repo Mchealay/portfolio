@@ -23,6 +23,9 @@ a {
     color: inherit;
 }
 
+#get{
+    background-color: rgb(17, 192, 55);
+}
 .btn {
     display: inline-block;
     padding: 10px 20px;
@@ -74,17 +77,34 @@ header nav ul li a {
     background: #007BFF;
     color: #fff;
     padding: 100px 0;
-    text-align: center;
 }
 
-#hero h2 {
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-text h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
-#hero p {
+.hero-text p {
     font-size: 1.2rem;
     margin-bottom: 30px;
+}
+
+.hero-image img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 5px solid #fff;
 }
 
 /* About Section */
@@ -93,27 +113,25 @@ header nav ul li a {
     background: #f9f9f9;
 }
 
-#about h2 {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 2rem;
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.about-content {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
+.about-text {
+    max-width: 600px;
+}
+
+.about-image img {
+    border-radius: 10px;
+    width: 400px;
+    height: auto;
 }
 
 /* Skills Section */
 #skills {
     padding: 80px 0;
-}
-
-#skills h2 {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 2rem;
 }
 
 .skills-grid {
@@ -142,12 +160,6 @@ header nav ul li a {
     background: #f9f9f9;
 }
 
-#projects h2 {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 2rem;
-}
-
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -161,8 +173,10 @@ header nav ul li a {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.project h3 {
-    margin-bottom: 10px;
+.project img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
 /* Contact Section */
@@ -170,17 +184,12 @@ header nav ul li a {
     padding: 80px 0;
 }
 
-#contact h2 {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 2rem;
-}
-
 .contact-links {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
+
 /* Dark Mode */
 body.dark-mode {
     background: #121212;
@@ -198,6 +207,7 @@ body.dark-mode .project {
     color: #ffffff;
     box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
 }
+
 /* Footer */
 footer {
     background: #333;
