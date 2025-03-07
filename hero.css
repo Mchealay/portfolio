@@ -1,0 +1,115 @@
+/* Hero Section */
+#hero {
+    background: linear-gradient(135deg, #007BFF, #00BFFF); /* Gradient background */
+    color: #fff;
+    padding: 80px 0; /* Reduced padding for a smaller height */
+    overflow: hidden; /* Ensure no overflow from animations */
+    position: relative;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-text {
+    max-width: 600px;
+    animation: slideInLeft 1s ease-out; /* Slide-in animation for text */
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.hero-text h2 {
+    font-size: 2.5rem; /* Slightly smaller font size */
+    margin-bottom: 15px; /* Reduced margin */
+    animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
+}
+
+.hero-text p {
+    font-size: 1.2rem; /* Slightly smaller font size */
+    margin-bottom: 20px; /* Reduced margin */
+    animation: fadeIn 2s ease-in-out; /* Fade-in animation */
+}
+
+.hero-text .btn {
+    background: #ff6f61; /* Vibrant button color */
+    color: #fff;
+    padding: 10px 25px; /* Slightly smaller button */
+    border-radius: 30px; /* Rounded button */
+    font-size: 1rem; /* Slightly smaller font size */
+    transition: background 0.3s ease, transform 0.3s ease;
+    animation: fadeIn 2.5s ease-in-out; /* Fade-in animation */
+}
+
+.hero-text .btn:hover {
+    background: #ff4a3d; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.hero-image {
+    animation: slideInRight 1s ease-out; /* Slide-in animation for image */
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.hero-image img {
+    border-radius: 50%;
+    width: 250px; /* Smaller image */
+    height: 250px;
+    object-fit: cover;
+    border: 6px solid rgba(255, 255, 255, 0.3); /* Transparent border */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-image img:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+}
+
+/* Background Animation */
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 10%, transparent 10.01%);
+    background-size: 20px 20px;
+    animation: moveBackground 10s linear infinite;
+    z-index: 0;
+}
+
+@keyframes moveBackground {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
